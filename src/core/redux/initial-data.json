@@ -1,0 +1,140 @@
+{
+  "config": {
+    "regions_visible": false
+  },
+
+  "shipping": {
+    "methods": {
+      "active": [
+        {
+          "id": "inpostpp",
+          "name": "Wysy\u0142ka do paczkomatu",
+          "description": "1 \u2014 3 dni robocze",
+          "price": "0,00",
+          "price_total": "229,97",
+          "free_shipping": true,
+          "payments": ["newpayu", "paypal_express"],
+          "type": "pickup",
+          "logistic_platform_code": "INPOST_PP",
+          "input_name": "packetpoint",
+          "is_client_address_required": false
+        },
+        {
+          "id": "storemethod",
+          "name": "Odbi\u00f3r w sklepie",
+          "description": "1 \u2014 3 dni robocze",
+          "price": "0,00",
+          "price_total": "229,97",
+          "free_shipping": true,
+          "payments": ["newpayu", "paypal_express"],
+          "type": "store",
+          "logistic_platform_code": "",
+          "input_name": "shop",
+          "is_client_address_required": false
+        },
+        {
+          "id": "couriermethod",
+          "name": "Kurier standard",
+          "description": "1 \u2014 3 dni robocze",
+          "price": "0,00",
+          "price_total": "229,97",
+          "free_shipping": true,
+          "payments": [
+            "newpayu_googlepay",
+            "newpayu",
+            "cashondelivery",
+            "paypal_express"
+          ],
+          "type": "courier",
+          "logistic_platform_code": "",
+          "input_name": "",
+          "is_client_address_required": true
+        }
+      ],
+      "disabled": [
+        {
+          "id": "expresscouriermethod",
+          "name": "Kurier Ekspres",
+          "description": "1 \u2014 2 dni robocze",
+          "price": "19,90",
+          "price_total": "249,87",
+          "free_shipping": false,
+          "payments": ["newpayu", "cashondelivery", "paypal_express"],
+          "type": "courier",
+          "logistic_platform_code": "",
+          "input_name": "",
+          "is_client_address_required": true
+        }
+      ]
+    }
+  },
+  "payments": {
+    "active": null,
+    "methods": {
+      "active": [
+        {
+          "id": "newpayu_googlepay",
+          "name": "Google Pay",
+          "description": "<p>Lorem ipsum dolor sit amet</p>\n"
+        },
+        {
+          "id": "newpayu",
+          "name": "P\u0142atno\u015b\u0107 online, kart\u0105, Blikiem lub Google Pay",
+          "description": ""
+        },
+        {
+          "id": "cashondelivery",
+          "name": "P\u0142atno\u015b\u0107 za pobraniem",
+          "description": "<p><span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;Mo\u017cesz zap\u0142aci\u0107 kurierowi w chwili przekazania paczki. P\u0142atno\u015b\u0107 przy odbiorze nie jest dost\u0119pna przy dostawie do sklepu.&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:8963,&quot;3&quot;:{&quot;1&quot;:0},&quot;4&quot;:[null,2,14281427],&quot;11&quot;:4,&quot;12&quot;:0,&quot;16&quot;:11}\">Mo\u017cesz zap\u0142aci\u0107 kurierowi w chwili przekazania paczki.&nbsp;</span></p>"
+        },
+        {
+          "id": "paypal_express",
+          "name": "PayPal",
+          "description": "<p><span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;Szybka p\u0142atno\u015b\u0107 kart\u0105 kredytow\u0105 lub \u015brodkami z konta bankowego. Konieczne jest posiadanie konta na PayPal lub jego za\u0142o\u017cenie.&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:9091,&quot;3&quot;:{&quot;1&quot;:0},&quot;4&quot;:[null,2,14281427],&quot;10&quot;:0,&quot;11&quot;:4,&quot;12&quot;:0,&quot;16&quot;:11}\">Szybka p\u0142atno\u015b\u0107 kart\u0105 kredytow\u0105 lub \u015brodkami z konta bankowego. Konieczne jest posiadanie konta na PayPal lub jego za\u0142o\u017cenie.</span></p>"
+        }
+      ],
+      "disabled": []
+    }
+  },
+  "customer_data": {
+    "firstname": "John",
+    "lastname": "Doe",
+    "gender": 2,
+    "telephone": "123123123",
+    "dial-code": "+50",
+    "email": "john.dow@example.com"
+  },
+  "address_data": [
+    {
+      "firstname": "John",
+      "lastname": "Doe",
+      "street0": "Oak Street",
+      "street1": "2274",
+      "street2": "11",
+      "city": "Old Forge",
+      "region": "New York",
+      "postcode": "13420",
+      "gender": 2,
+      "full_address": "",
+      "telephone": "123123123",
+      "dial-code": "+50",
+      "additional-information": "lorem ipsum dolor sit amet",
+      "id": 11283684
+    }
+  ],
+  "invoice_data": {
+    "firstname": "John",
+    "lastname": "Doe",
+    "company": "",
+    "vatin": "",
+    "regon": "",
+    "vatdph": "",
+    "street0": "Oak Street",
+    "street1": "2274",
+    "street2": "11",
+    "postcode": "13420",
+    "city": "Old Forge",
+    "id": "11283683",
+    "is_private": true
+  }
+}
